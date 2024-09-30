@@ -14,6 +14,9 @@
     <div class="container">
       <h4>Remaining Balance</h4>
       <h1 id="balance">₹0.00</h1>
+
+      
+
       <div class="inc-exp-container">
         <div>
           <h5>INITIAL AMOUNT</h5>
@@ -36,20 +39,33 @@
           ><button class="delete-btn">x</button>
         </li> -->
       </ul>
-      <h3>Add New Transition</h3>
+
+      <!--Initial amount box-->
+      <div class="form-control">
+        <h3>Initial Amount</h3>
+        <label for="amount">(<b>**First enter Initial Amount)</b></label>
+        <input type="number" id="intialAmount" placeholder="Enter Initial Amount"/>
+        <button class="btn" id="set-initial">Set Initial Amount</button>
+      </div>
+
+      <h3>Add New Transaction</h3>
       <form id="form">
           <div class="form-control">
               <label for="text">Text</label>
               <input type="text" id="text" placeholder="Enter Text...."/>
           </div>
           <div class="form-control">
-              <label for="amount">Amount <br> (<b>**First enter Initial Amount</b>,<br> 
-                use negative sign for expenses )</label>
+              
               <input type="number" id="amount" placeholder="Enter amount..."> 
           </div>
           <button class="btn">All transaction</button>
       </form>
+
+      <!--Reset Button-->
+    <button class="btn" id="reset-btn">Reset</button>
+    
     </div>
+    
     <!-- JavaYscript Project  -->
     <script src="script.js"></script>
   </body>
